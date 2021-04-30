@@ -1,0 +1,20 @@
+{
+  "name": "easybank-landing-page-master",
+  "version": "1.0.0",
+  "description": "FrontendMentor-PracticeTest2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Gulp",
+    "Sass",
+    "Frontend"
+  ],
+  "author": "Carlos Reyes",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-dart-sass": "^1.0.2"
+  }
+}

@@ -1,0 +1,72 @@
+
+.header {
+    background-color: white;
+    border: 1px solid red;
+    height: 9rem;
+}
+.header-flex {
+    height: 100%;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav {
+        display: flex;
+        @include tablet-max {
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 13rem;
+            width: 85%;
+            padding: 2rem;
+            background-color: white;
+            border-radius: .5rem;
+            transform: translateX(120%);
+            transition: transform 1s ease;
+        }
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            margin-right: 1.8rem;
+            color: $grayish-blue;
+            padding: 1rem;
+            @include tablet-max {
+                margin: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+            &:hover {
+                background-color: $ligth-grayish-blue;
+                border-radius: 3rem;
+            }
+        }
+    }
+    .submit-button {
+        background: linear-gradient(to right, $lime-green, $bright-cyan );
+        width: 18rem;
+        height: 55%;
+        display: grid;
+        place-items: center;
+        color: white;
+        border-radius: 3rem;
+        cursor: pointer;
+        p {
+            font-weight: bold;
+        }
+        @include tablet-max {
+            display: none;
+        }
+    }
+    .hamburger {
+        cursor: pointer;
+        @include tablet{
+            display: none;
+        }
+    }
+    .mostrar {
+        transform: translateX(0%);
+    }
+}
+
+

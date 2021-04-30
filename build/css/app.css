@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+html {
+  font-size: 62.5%;
+  font-family: "Public Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.header {
+  background-color: white;
+  border: 1px solid red;
+  height: 9rem;
+}
+
+.header-flex {
+  height: 100%;
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-flex .nav {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .header-flex .nav {
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 13rem;
+    width: 85%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    transform: translateX(120%);
+    transition: transform 1s ease;
+  }
+}
+.header-flex .nav a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 1.8rem;
+  color: #9698a6;
+  padding: 1rem;
+}
+@media (max-width: 768px) {
+  .header-flex .nav a {
+    margin: 0;
+  }
+}
+.header-flex .nav a:last-of-type {
+  margin-right: 0;
+}
+.header-flex .nav a:hover {
+  background-color: #f3f4f6;
+  border-radius: 3rem;
+}
+.header-flex .submit-button {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  width: 18rem;
+  height: 55%;
+  display: grid;
+  place-items: center;
+  color: white;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.header-flex .submit-button p {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .header-flex .submit-button {
+    display: none;
+  }
+}
+.header-flex .hamburger {
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .header-flex .hamburger {
+    display: none;
+  }
+}
+.header-flex .mostrar {
+  transform: translateX(0%);
+}
