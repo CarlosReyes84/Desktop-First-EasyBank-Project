@@ -13,10 +13,17 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    border: 1px solid red;
     @include tablet-max{
         width: 85%;
     }
 }
 p {
     font-size: 1.5rem;
+}
+h1 {
+    font-size: 6rem;
+    @include tablet-max {
+        font-size: 4rem;
+    }
 }
