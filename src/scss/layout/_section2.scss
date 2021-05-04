@@ -1,0 +1,51 @@
+.section2 {
+    @include tablet-max {
+        margin-top: 6rem;
+    }
+    .title-section2 {
+        @include tablet-max {
+            text-align: center;
+        }
+        p {
+            margin-top: 2rem;
+            @include tablet {
+                font-size: 2rem;
+            }
+        }
+        span {
+            display: block;
+            @include tablet-max {
+                display: inline;
+            }
+        }
+    }
+    .posts {
+        display: flex;
+        margin-top: 4rem;
+        gap: 4rem;
+        @include tablet-max {
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+        .post {
+            padding: 1rem;
+            border: 1px solid green;
+            @include tablet-max {
+                text-align: center;
+            }
+            img {
+                margin-bottom: 2.5rem;
+            }
+            h3 {
+                margin-bottom: 2rem;
+            }
+            p {
+                line-height: 2.4rem;
+                @include tablet {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}

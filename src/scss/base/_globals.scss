@@ -20,10 +20,26 @@ body {
 }
 p {
     font-size: 1.5rem;
+    color: $grayish-blue;
 }
 h1 {
     font-size: 6rem;
+    font-weight: 300;
     @include tablet-max {
         font-size: 4rem;
+    }
+}
+h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    @include tablet-max {
+        font-size: 3.5rem;
+    }
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    @include tablet-max {
+        font-size: 2rem;
     }
 }
