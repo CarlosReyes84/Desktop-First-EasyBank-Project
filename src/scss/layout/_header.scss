@@ -54,6 +54,7 @@
         cursor: pointer;
         p {
             font-weight: bold;
+            color: white;
         }
         @include tablet-max {
             display: none;

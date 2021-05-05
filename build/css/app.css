@@ -60,6 +60,11 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+}
+
 .header {
   background-color: white;
   border: 1px solid red;
@@ -122,6 +127,7 @@ h3 {
 }
 .header-flex .submit-button p {
   font-weight: bold;
+  color: white;
 }
 @media (max-width: 768px) {
   .header-flex .submit-button {
@@ -236,7 +242,7 @@ h3 {
 .main .text-main .button {
   background: linear-gradient(to right, #31d35c, #2bb7da);
   width: 18rem;
-  height: 4.5rem;
+  height: 5rem;
   border-radius: 3rem;
   cursor: pointer;
   display: flex;
@@ -247,6 +253,7 @@ h3 {
 @media (max-width: 768px) {
   .main .text-main .button {
     margin: 4rem auto 0;
+    height: 4.5rem;
   }
 }
 .main .text-main .button p {
@@ -258,7 +265,7 @@ h3 {
 
 @media (max-width: 768px) {
   .section2 {
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
 }
 @media (max-width: 768px) {
@@ -316,4 +323,52 @@ h3 {
   .section2 .posts .post p {
     font-size: 1.7rem;
   }
+}
+
+.article-section {
+  margin-top: 17rem;
+}
+@media (max-width: 768px) {
+  .article-section {
+    margin-top: 10rem;
+    text-align: center;
+  }
+}
+.article-section h2 {
+  margin-bottom: 4rem;
+}
+.article-section .articles {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .article-section .articles {
+    flex-direction: column;
+  }
+}
+.article-section .article {
+  text-align: start;
+  width: 30rem;
+  border: 1px solid green;
+  background-color: #fafafa;
+}
+.article-section .article img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.article-section .article span {
+  display: block;
+  margin-top: 2rem;
+  color: #9698a6;
+  font-size: 1.2rem;
+}
+.article-section .article h4 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+.article-section .article p {
+  margin-bottom: 4rem;
 }
