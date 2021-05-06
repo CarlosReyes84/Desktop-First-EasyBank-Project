@@ -1,0 +1,90 @@
+.footer {
+    border: 1px solid green;
+    background-color: $dark-blue;
+    padding: 3rem;
+    margin-top: 7rem;
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet-max {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+    .images_footer {
+        display:flex;
+        flex-direction: column;
+        gap: 7rem;
+        border: 1px solid blue;
+        @include tablet-max {
+            gap: 4rem;
+        }
+        .image_logo {
+            img {
+                cursor: pointer;
+                @include tablet-max {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .image_icons {
+            img {
+                cursor: pointer;
+                margin-right: 1.5rem;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        border: 1px solid blue;
+        @include tablet-max {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+        }
+        a {
+            color: #FFFFFF;
+            font-size: 1.7rem;
+            text-decoration: none;
+            font-weight: 300;
+            &:hover {
+                color: $lime-green;
+            }
+        }
+    }
+    .button-last {
+        display: flex;
+        flex-direction: column;
+        gap: 7rem;
+        border: 1px solid blue;
+        @include tablet-max {
+            gap: 4rem;
+        }
+        .button {
+            background: linear-gradient(to right, $lime-green, $bright-cyan );
+            width: 18rem;
+            height: 5rem;
+            border-radius: 3rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            @include tablet-max {
+                height: 4.5rem;
+            }
+            p {
+                color: white;
+                margin: 0;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
