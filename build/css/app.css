@@ -66,13 +66,11 @@ h4 {
 
 .header {
   background-color: white;
-  border: 1px solid red;
   height: 9rem;
 }
 
 .header-flex {
   height: 100%;
-  border: 1px solid green;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,7 +146,6 @@ h4 {
 
 .main {
   position: relative;
-  border: 1px solid green;
   overflow: hidden;
   height: 100vh;
 }
@@ -173,7 +170,6 @@ h4 {
 .main .layout {
   display: flex;
   justify-content: flex-end;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .main .layout {
@@ -218,7 +214,6 @@ h4 {
 }
 .main .text-main {
   flex-basis: 30%;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .main .text-main {
@@ -302,7 +297,6 @@ h4 {
 }
 .section2 .posts .post {
   padding: 1rem;
-  border: 1px solid green;
 }
 @media (max-width: 768px) {
   .section2 .posts .post {
@@ -350,7 +344,6 @@ h4 {
 .article-section .article {
   text-align: start;
   width: 30rem;
-  border: 1px solid green;
   background-color: #fafafa;
 }
 .article-section .article img {
@@ -373,7 +366,6 @@ h4 {
 }
 
 .footer {
-  border: 1px solid green;
   background-color: #2d314d;
   padding: 3rem;
   margin-top: 7rem;
@@ -393,7 +385,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 7rem;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .footer .images_footer {
@@ -420,7 +411,6 @@ h4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .footer .nav {
@@ -441,7 +431,6 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 7rem;
-  border: 1px solid blue;
 }
 @media (max-width: 768px) {
   .footer .button-last {
