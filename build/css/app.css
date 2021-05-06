@@ -84,7 +84,7 @@ h4 {
   .header-flex .nav {
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 10rem;
     width: 85%;
     padding: 2rem;
