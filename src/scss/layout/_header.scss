@@ -57,6 +57,9 @@
         @include tablet-max {
             display: none;
         }
+        &:hover {
+            opacity: .8;
+        }
     }
     .hamburger {
         cursor: pointer;

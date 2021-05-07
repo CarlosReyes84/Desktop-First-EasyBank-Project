@@ -131,6 +131,9 @@ h4 {
     display: none;
   }
 }
+.header-flex .submit-button:hover {
+  opacity: 0.8;
+}
 .header-flex .hamburger {
   cursor: pointer;
 }
@@ -256,6 +259,9 @@ h4 {
   font-size: 1.5rem;
   font-weight: bold;
 }
+.main .text-main .button:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 768px) {
   .section2 {
@@ -359,7 +365,11 @@ h4 {
   font-size: 1.2rem;
 }
 .article-section .article h4 {
+  cursor: pointer;
   margin: 2rem 0rem 1rem 0rem;
+}
+.article-section .article h4:hover {
+  color: #31d35c;
 }
 .article-section .article p {
   margin-bottom: 4rem;
@@ -458,4 +468,7 @@ h4 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: bold;
+}
+.footer .button-last .button:hover {
+  opacity: 0.8;
 }
