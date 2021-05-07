@@ -9,12 +9,9 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 - Semantic HTML5 markup
 - SASS
 - Flexbox
-- CSS Grid
 - Desktop-First workflow
 - Gulp to Compile SASS
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 
 ### What I learned
