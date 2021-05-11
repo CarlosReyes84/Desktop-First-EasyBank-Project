@@ -1,9 +1,9 @@
 .section2 {
-    @include tablet-max {
+    @include laptop-max {
         margin-top: 10rem;
     }
     .title-section2 {
-        @include tablet-max {
+        @include laptop-max {
             text-align: center;
         }
         p {
@@ -23,14 +23,14 @@
         display: flex;
         margin-top: 4rem;
         gap: 4rem;
-        @include tablet-max {
+        @include laptop-max {
             flex-direction: column;
             justify-content: center;
             gap: 2.5rem;
         }
         .post {
             padding: 1rem;
-            @include tablet-max {
+            @include laptop-max {
                 text-align: center;
             }
             img {

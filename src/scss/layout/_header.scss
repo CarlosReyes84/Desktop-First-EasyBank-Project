@@ -10,7 +10,7 @@
     align-items: center;
     .nav {
         display: flex;
-        @include tablet-max {
+        @include laptop-max {
             flex-direction: column;
             align-items: center;
             position: absolute;
@@ -54,7 +54,7 @@
             font-weight: bold;
             color: white;
         }
-        @include tablet-max {
+        @include laptop-max {
             display: none;
         }
         &:hover {
@@ -63,7 +63,7 @@
     }
     .hamburger {
         cursor: pointer;
-        @include tablet{
+        @include laptop{
             display: none;
         }
     }

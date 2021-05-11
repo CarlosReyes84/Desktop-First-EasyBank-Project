@@ -10,7 +10,6 @@
     .articles {
         display: flex;
         gap: 4rem;
-        justify-content: space-between;
         align-items: center;
         @include tablet-max {
             flex-direction: column;
