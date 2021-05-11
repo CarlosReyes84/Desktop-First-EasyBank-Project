@@ -354,6 +354,7 @@ h4 {
   display: flex;
   gap: 4rem;
   align-items: center;
+  justify-content: space-between;
 }
 @media (max-width: 768px) {
   .article-section .articles {
