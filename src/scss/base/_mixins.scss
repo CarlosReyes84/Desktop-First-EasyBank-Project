@@ -8,3 +8,13 @@
         @content;
     }
 }
+@mixin laptop {
+    @media(min-width: 992px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media(min-width: 1400px) {
+        @content;
+    }
+}

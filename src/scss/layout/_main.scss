@@ -1,7 +1,6 @@
 .main {
     position: relative;
     overflow: hidden;
-    height: 100vh;
     @include tablet-max {
         flex-direction: column;
         height: auto;
@@ -24,11 +23,16 @@
         }
         .desktop_layout { //desktop and mobile_desktop are being relative to .main
             position: absolute;
-            right: -30rem;
             top: -28rem;
             z-index: -1;
-            @include tablet-max {
+            @include tablet-max { //de 768px para abajo se aplican las propiedades
                 display: none;
+            }
+            @include laptop {
+                right: -50rem;
+            }
+            @include desktop {
+                right: -30rem;
             }
         }
         .mobile_layout {
@@ -37,7 +41,7 @@
             top: -15rem;
             width: 110%;
             z-index: -1;
-            @include tablet {
+            @include tablet {  //de 768px para arriba se aplican las propiedades
                 display: none;
             }
         }
@@ -54,10 +58,14 @@
         }
     }
     .text-main {
-        flex-basis: 30%;
         @include tablet-max {
-            flex-basis: auto;
             text-align: center;
+        }
+        @include laptop {
+            flex-basis: 50%;
+        }
+        @include desktop {
+            flex-basis: 30%;
         }
         h1 {
             margin-bottom: 1.5rem;
